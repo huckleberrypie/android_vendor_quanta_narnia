@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/6620_launcher:system/bin/6620_launcher \
     $(LOCAL_PATH)/proprietary/system/bin/6620_wmt_concurrency:system/bin/6620_wmt_concurrency \
     $(LOCAL_PATH)/proprietary/system/bin/6620_wmt_lpbk:system/bin/6620_wmt_lpbk \
-    $(LOCAL_PATH)/proprietary/system/bin/aal:system/bin/aal \
+    #$(LOCAL_PATH)/proprietary/system/bin/aal:system/bin/aal \
     $(LOCAL_PATH)/proprietary/system/bin/akmd09911:system/bin/akmd09911 \
     $(LOCAL_PATH)/proprietary/system/bin/akmd8963:system/bin/akmd8963 \
     $(LOCAL_PATH)/proprietary/system/bin/audiocmdservice_atci:system/bin/audiocmdservice_atci \
@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/power.default.so:system/lib/hw/power.default.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.mt8127.so:system/lib/hw/sensors.mt8127.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
+    #$(LOCAL_PATH)/proprietary/system/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib_uree_mtk_crypto.so:system/lib/lib_uree_mtk_crypto.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib_uree_mtk_video_secure_al.so:system/lib/lib_uree_mtk_video_secure_al.so \
     $(LOCAL_PATH)/proprietary/system/lib/lib3a.so:system/lib/lib3a.so \
@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libcamera_client_mtk.so:system/lib/libcamera_client_mtk.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcameraanalyzer.so:system/lib/libcameraanalyzer.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcameracustom.so:system/lib/libcameracustom.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libcameracustom.so:system/lib/libcorkscrew.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcustom_nvram.so:system/lib/libcustom_nvram.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcvsd_mtk.so:system/lib/libcvsd_mtk.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdpframework.so:system/lib/libdpframework.so \
@@ -211,3 +212,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/mtklog-config.prop:system/etc/mtklog-config.prop \
     $(LOCAL_PATH)/proprietary/system/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
     $(LOCAL_PATH)/proprietary/system/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf
+
+PRODUCT_PACKAGES += \
+libblisrc \
+libblisrc32 \
+libcorkscrew 
